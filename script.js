@@ -2,10 +2,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Replace 'your-animation.riv' with the path to your Rive file
     const rivePath = './assets/lookingforlove.riv';
-    
+
     // Get the canvas element
     const canvas = document.getElementById('rive-canvas');
-    
+
     // Initialize a new Rive instance
     const r = new rive.Rive({
         src: rivePath,
