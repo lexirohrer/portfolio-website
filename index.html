@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/@rive-app/rive-js@2"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Rive Animations</title>
@@ -17,6 +17,13 @@
     <main>
         <section class="animation-container">
             <div id="rive-canvas"></div>
+            <script>
+                new rive.Rive({
+                  src: 'assets/lookingforlove.riv', // Replace with your file path
+                  canvas: document.getElementById('rive-canvas'),
+                  autoplay: true,
+                });
+                </script>
         </section>
     </main>
     
@@ -27,15 +34,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-<script>     const r = new rive.Rive({
-    src: '/portfolio-website/assets',
-    // OR the path to a discoverable and public Rive asset
-    // src: '/public/example.riv',
-    canvas: document.getElementById("Looking for love? 2"),
-    autoplay: true,
-    stateMachines: "State Machine 1",
-    onLoad: () => {
-      r.resizeDrawingSurfaceToCanvas();
-    },
-}); </script>
